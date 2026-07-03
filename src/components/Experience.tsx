@@ -9,14 +9,6 @@ const bullets = [
   'Engaged with ground-level teams to understand logistical barriers to clean-up operations, incorporating field feedback into management-level recommendations.',
 ]
 
-const tags = [
-  'Urban Planning',
-  'Policy Proposals',
-  'Pollution Control',
-  'Civic Engagement',
-  'Stakeholder Communication',
-  'Waste Management',
-]
 
 function Experience() {
   return (
@@ -63,16 +55,7 @@ function Experience() {
               ))}
             </ul>
 
-            <ul className="mt-7 flex flex-wrap gap-2">
-              {tags.map((tag) => (
-                <li
-                  key={tag}
-                  className="rounded-full border border-line px-3 py-1 text-xs text-mute"
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
+            
           </div>
         </Reveal>
       </div>

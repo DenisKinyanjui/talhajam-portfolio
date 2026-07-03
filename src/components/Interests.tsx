@@ -1,10 +1,10 @@
-import { BookOpen, KeyRound, Landmark, Leaf } from 'lucide-react'
+import { LockKeyhole, Landmark, Leaf } from 'lucide-react'
 import Reveal from './Reveal'
 import SectionHeading from './SectionHeading'
 
 const items = [
   {
-    icon: KeyRound,
+    icon: LockKeyhole,
     title: 'Cybersecurity',
     description:
       'Understanding how systems can be protected, how threats evolve, and how digital safety intersects with public trust and policy.',
@@ -25,7 +25,7 @@ const items = [
     color: 'text-moss border-moss/40',
   },
   {
-    icon: BookOpen,
+    image: '/books.svg',
     title: 'Reading & Ideas',
     description:
       'A daily habit and a core part of who I am. Books on technology, society, philosophy, and fiction all have a place on my shelf.',
@@ -52,7 +52,11 @@ function Interests() {
                 <div
                   className={`inline-flex h-11 w-11 items-center justify-center rounded-md border bg-panel-raised ${item.color}`}
                 >
-                  <item.icon size={19} strokeWidth={1.75} />
+                  {item.icon ? (
+                    <item.icon size={19} strokeWidth={1.75} />
+                  ) : (
+                    <img src={item.image} alt="" className="h-5 w-5" />
+                  )}
                 </div>
                 <h3 className="mt-5 font-heading text-xl font-semibold text-bone">
                   {item.title}
