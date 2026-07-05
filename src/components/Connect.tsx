@@ -1,6 +1,6 @@
 import { Mail } from 'lucide-react'
 import Reveal from './Reveal'
-import { InstagramIcon, LinkedInIcon, XIcon } from './SocialIcons'
+import { InstagramIcon, LinkedInIcon } from './SocialIcons'
 
 const socials = [
   { label: 'LinkedIn', icon: LinkedInIcon, href: 'https://www.linkedin.com/in/talha-ahmad-69288a41b?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
