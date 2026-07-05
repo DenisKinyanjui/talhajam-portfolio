@@ -1,14 +1,29 @@
+import { useState } from 'react'
 import { Mail } from 'lucide-react'
 import Reveal from './Reveal'
 import { InstagramIcon, LinkedInIcon } from './SocialIcons'
 
+const EMAIL = 'talhaahmad18b@gmail.com'
+
 const socials = [
   { label: 'LinkedIn', icon: LinkedInIcon, href: 'https://www.linkedin.com/in/talha-ahmad-69288a41b?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
   { label: 'Instagram', icon: InstagramIcon, href: 'https://www.instagram.com/talha_jam007?igsh=MXZsNWE1cmdvMW56Ng%3D%3D&utm_source=qr' },
-  { label: 'Email', icon: Mail, href: 'mailto:talhaahmad18b@gmail.com' },
+  { label: 'Email', icon: Mail, href: `mailto:${EMAIL}` },
 ]
 
 function Connect() {
+  const [copied, setCopied] = useState(false)
+
+  const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Desktop (lg+): copy the address instead of handing off to a mail client.
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      e.preventDefault()
+      navigator.clipboard.writeText(EMAIL)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
+  }
+
   return (
     <section id="connect" className="px-6 py-28">
       <div className="mx-auto max-w-4xl">
@@ -27,10 +42,15 @@ function Connect() {
                 <a
                   key={social.label}
                   href={social.href}
+                  onClick={
+                    social.label === 'Email' ? handleEmailClick : undefined
+                  }
                   className="flex items-center gap-2 rounded-md border border-line px-5 py-2.5 text-sm text-bone transition-colors hover:border-gold/50 hover:text-gold-soft"
                 >
                   <social.icon size={16} />
-                  {social.label}
+                  {social.label === 'Email' && copied
+                    ? 'Copied!'
+                    : social.label}
                 </a>
               ))}
             </div>
