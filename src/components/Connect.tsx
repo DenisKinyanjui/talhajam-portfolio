@@ -3,10 +3,9 @@ import Reveal from './Reveal'
 import { InstagramIcon, LinkedInIcon, XIcon } from './SocialIcons'
 
 const socials = [
-  { label: 'LinkedIn', icon: LinkedInIcon, href: '#' },
-  { label: 'X (Twitter)', icon: XIcon, href: '#' },
-  { label: 'Instagram', icon: InstagramIcon, href: '#' },
-  { label: 'Email', icon: Mail, href: 'mailto:hello@talhaahmad.dev' },
+  { label: 'LinkedIn', icon: LinkedInIcon, href: 'https://www.linkedin.com/in/talha-ahmad-69288a41b?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
+  { label: 'Instagram', icon: InstagramIcon, href: 'https://www.instagram.com/talha_jam007?igsh=MXZsNWE1cmdvMW56Ng%3D%3D&utm_source=qr' },
+  { label: 'Email', icon: Mail, href: 'mailto:talhaahmad18b@gmail.com' },
 ]
 
 function Connect() {
