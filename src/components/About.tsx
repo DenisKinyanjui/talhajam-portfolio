@@ -10,7 +10,7 @@ function About() {
         </Reveal>
 
         <div className="mt-12 grid gap-14 lg:grid-cols-[1.4fr_1fr]">
-          <Reveal delay={80}>
+          <Reveal delay={80} className="order-1">
             <div className="space-y-5 text-[15px] leading-[1.75] text-mute">
               <p>
                 I'm a multidisciplinary thinker with roots in{' '}
@@ -50,7 +50,33 @@ function About() {
             </div>
           </Reveal>
 
-          <Reveal delay={160}>
+          <Reveal delay={220} className="order-2 lg:order-3 lg:col-span-2">
+            <div className="flex flex-col items-center gap-6 rounded-lg border border-line bg-panel px-6 py-10 text-center sm:flex-row sm:justify-center sm:gap-8 sm:text-left">
+              <div className="relative aspect-[3/4] w-full max-w-[140px] shrink-0">
+                <img
+                  src="/bookcoverbackside.webp"
+                  alt=""
+                  className="absolute inset-0 h-full w-full translate-x-3 translate-y-2 rotate-3 rounded-md border border-line object-cover shadow-lg"
+                />
+                <img
+                  src="/bookcover.webp"
+                  alt="The Prince by Niccolò Machiavelli — book cover"
+                  className="relative h-full w-full rounded-md border border-line object-cover shadow-xl"
+                />
+              </div>
+
+              <div>
+                <p className="text-xs font-medium tracking-[0.18em] text-gold-soft uppercase">
+                  My Favorite Book
+                </p>
+                <h3 className="mt-2 font-heading text-xl font-semibold text-bone sm:text-2xl">
+                  The Prince by Niccolò Machiavelli
+                </h3>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={160} className="order-3 lg:order-2">
             <div className="space-y-4">
               <div className="rounded-lg border border-line border-l-2 border-l-gold bg-panel px-6 py-5">
                 <p className="font-heading text-3xl font-semibold text-gold-soft">
@@ -66,7 +92,7 @@ function About() {
                   2
                 </p>
                 <p className="mt-1 text-sm text-mute">
-                  Academic degrees (one ongoing)
+                  Academic degrees completed
                 </p>
               </div>
 
@@ -74,11 +100,11 @@ function About() {
                 <div className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-moss" />
                   <span className="text-xs font-medium tracking-[0.16em] text-moss uppercase">
-                    Currently Active
+                    Open to Opportunities
                   </span>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-mute">
-                  Pursuing a Master's in Information Technology with a major
+                  Completed a Master's in Information Technology with a major
                   in Cybersecurity (2024–2026). Open to networking,
                   collaborations, and conversations around tech, governance,
                   and ideas.

@@ -87,7 +87,7 @@ function Hero() {
             <img
               src="/image.jpeg"
               alt="Talha Ahmad"
-              className="relative h-full w-full rounded-2xl border border-line object-cover shadow-xl"
+              className="relative h-full w-full rounded-2xl border border-line object-cover object-top shadow-xl"
             />
           </div>
         </Reveal>

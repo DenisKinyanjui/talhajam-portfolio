@@ -7,14 +7,14 @@ const entries = [
     degree: 'Master of Information Technology',
     major: 'Major in Cyber Security',
     description:
-      'Deepening expertise in digital security, network infrastructure, information systems management, and the intersection of technology and policy. Currently in progress.',
-    status: 'In Progress',
-    statusColor: 'border-slate/50 text-slate',
+      'Deepened expertise in digital security, network infrastructure, information systems management, and the intersection of technology and policy.',
+    status: 'Completed',
+    statusColor: 'border-gold/50 text-gold-soft',
   },
   {
     years: '2016 – 2020',
     degree: 'Bachelor of Science',
-    major: 'Public Administration',
+    major: 'Public Administration, Gold Medalist in Public Admnistration',
     description:
       'Built a strong foundation in governance, public policy, organizational management, and civic systems. Developed skills in institutional thinking, stakeholder communication, and planning — skills that continue to inform everything I do.',
     status: 'Completed',
