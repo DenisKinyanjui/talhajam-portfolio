@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* @theme {
+@theme {
   --font-heading: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
@@ -22,7 +22,7 @@
   --color-moss: #7fae86;
 
   --animate-drift: drift 2.4s ease-in-out infinite;
-} */
+}
 
 @keyframes drift {
   0%,
